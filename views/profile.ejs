@@ -1,0 +1,15 @@
+<%- include('common/nav'); %>
+<body>
+<h1>Profile Page</h1>
+<hr>
+<h3>Welcome, Mr. <%= uname%></h3>
+<h4>Email:<%= data.email%></h4>
+<h4>City:<%= data.city%></h4>
+<h4>
+    <ul>
+        <% data.skills.forEach(function(item){ %>
+            <li><%= item %></li>        
+        <% }) %>
+    </ul>
+</h4>
+</body>
